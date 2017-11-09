@@ -6,7 +6,7 @@
  * @apiDescription 消費者點擊 四格menu(Webview)。
  * 要發送給bot的資料。
  *
- * @apiParam {String} webview 從menu點擊 webview，使用: menu
+ * @apiParam {String} webview 從menu點擊 webview。在此使用: menu
  * @apiParam {String} action 點擊webview的內容。在此使用: purchase
  * @apiParam {String} page_token 粉絲團的token
  * @apiParam {String} mid 消費者id
@@ -22,7 +22,7 @@
  * @apiDescription 消費者點選四格選單(Webview)。
  * 知識要發送給bot的資料。
  *
- * @apiParam {String} webview 從數字鍵盤點擊 webview，使用: number_pad
+ * @apiParam {String} webview 從數字鍵盤點擊 webview。在此使用: number_pad
  * @apiParam {String} action 點擊webview的內容。在此使用: purchase
  * @apiParam {String} page_token 粉絲團的token
  * @apiParam {String} mid 消費者id
