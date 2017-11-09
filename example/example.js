@@ -22,13 +22,14 @@
  * @apiDescription 消費者點選四格選單(Webview)。
  * 知識要發送給bot的資料。
  *
- * @apiParam {String} webview 從menu點擊 webview，使用: menu
+ * @apiParam {String} webview 從數字鍵盤點擊 webview，使用: number_pad
  * @apiParam {String} action 點擊webview的內容。在此使用: purchase
  * @apiParam {String} page_token 粉絲團的token
  * @apiParam {String} mid 消費者id
  *
- * @apiParam {String} product_name 產品名稱
- * @apiParam {Number} number 購買的產品數量
+ * @apiParam {String} pid 產品id
+ * @apiParam {String} pname 產品名稱
+ * @apiParam {Number} pnumber 產品數量(這次訂購的)
  *
  * @apiSuccess {String} text success
  */
