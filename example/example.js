@@ -34,12 +34,18 @@
  */
 
 /**
- * @api {get} /user/:id
+ * @api {get} /user/:id a
+ * @apiName a
+ * @apiGroup just try
+ *
  * @apiParam {Number} id Users unique ID.
  */
 
 /**
- * @api {post} /user/
+ * @api {post} /user/ b
+ * @apiName b
+ * @apiGroup just try
+ *
  * @apiParam {String} [firstname]  Optional Firstname of the User.
  * @apiParam {String} lastname     Mandatory Lastname.
  * @apiParam {String} country="DE" Mandatory with default value "DE".
