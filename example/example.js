@@ -1,13 +1,12 @@
 /**
- * @api {post} bot_domain/webview_action/:webview/:action 四格 menu 的 item
+ * @api {post} bot_domain/member_action/menu/purchase 四格 menu 的 item
  * @apiName set menu item
  * @apiGroup Bot API
  *
  * @apiDescription 消費者點擊 四格menu(Webview)。
  * 要發送給bot的資料。
  *
- * @apiParam {String} webview 從menu點擊 webview。在此使用: menu
- * @apiParam {String} action 點擊webview的內容。在此使用: purchase
+ * @apiParam {String} page_id 粉絲團的id
  * @apiParam {String} page_token 粉絲團的token
  * @apiParam {String} mid 消費者id
  *
@@ -15,15 +14,14 @@
  */
 
 /**
- * @api {post} bot_domain/webview_action/:webview/:action 通知number
+ * @api {post} bot_domain/purchase/product_qty 通知number
  * @apiName set current product
  * @apiGroup Bot API
  *
  * @apiDescription 消費者點選四格選單(Webview)。
  * 知識要發送給bot的資料。
  *
- * @apiParam {String} webview 從數字鍵盤點擊 webview。在此使用: number_pad
- * @apiParam {String} action 點擊webview的內容。在此使用: purchase
+ * @apiParam {String} page_id 粉絲團的id
  * @apiParam {String} page_token 粉絲團的token
  * @apiParam {String} mid 消費者id
  *
