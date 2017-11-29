@@ -174,12 +174,34 @@ You may create your own question using this action. It takes a JSON object conta
                 ]
             }
 
-## Questions Collection [/questions1{?page}]
+
+
+
+# Task [/tasks/{id}]
+
++ Parameters
+    + id
+
+## Delete Task [DELETE]
+
++ Relation: delete
++ Response 204
+
+
+## Retrieve Task [GET]
+
++ Relation: id
+
++ Response 200
+
+        { ... }
+
+## JSON Schema [/json_schema{?page}]
 
 + Parameters
     + page: 1 (optional, number) - The page of questions to return
 
-### Create a New Question1 [POST]
+### Create a New Question [POST]
 You may create your own question using this action. It takes a JSON object
 containing a question and a collection of answers in the form of choices.
 
@@ -215,3 +237,47 @@ containing a question and a collection of answers in the form of choices.
             }
 
 + Response 200
+
+
+### List All Questions1 [GET]
+
++ Response 200
+
+
+## MSON Attribute [/mson_schema{?page}]
+
++ Parameters
+    + page: 1 (optional, number) - The page of questions to return
+
+### Create a New Question [POST]
+You may create your own question using this action. It takes a JSON object
+containing a question and a collection of answers in the form of choices.
+
++ Request (application/json)
+
+    + Attributes
+
+        + question: Favourite Language? (required)
+        + choices: Swift, `Objective-C` (array, required)
+
+
++ Response 200
+
+### List All Questions [GET]
++ Response 200 (application/json)
+
+    + Attributes (array[Question])
+
+## Data Structures
+
+
+### Question
++ question: Favourite programming language? (required)
++ published_at: `2014-11-11T08:40:51.620Z` (required)
++ url: /questions/1 (required)
++ choices (array[Choice], required)
+
+### Choice
++ choice: Javascript (required)
++ url: /questions/1/choices/1 (required)
++ votes: 2048 (number, required)
